@@ -1,0 +1,148 @@
+theme: jekyll-theme-chirpy
+lang: en
+timezone: Asia/Colombo
+
+title: Thanushi Alanka 
+tagline: 
+description: >- 
+  
+
+
+url: "https://thanushialanka.github.io"
+
+github:
+  username: thanushialanka 
+
+twitter:
+  username: thanushialanka 
+
+linkedin:
+  username: thanushi-alanka
+
+social:
+  name: Thanushi Alanka
+  email: 
+  links:
+    - https://www.linkedin.com/in/thanushi-alanka
+    - https://twitter.com/thanushialanka
+    - https://github.com/thanushialanka 
+
+google_site_verification: 
+
+google_analytics:
+  id: 
+
+theme_mode: 
+
+
+img_cdn:
+
+social_preview_image: 
+
+toc: true
+
+comments:
+  active: 
+  disqus:
+    shortname: 
+  utterances:
+    repo: 
+    issue_term: 
+  
+  giscus:
+    repo: 
+    repo_id:
+    category:
+    category_id:
+    mapping: 
+    input_position: 
+    lang: 
+    reactions_enabled: 
+
+assets:
+  self_host:
+    enabled: 
+    env: 
+
+pwa:
+  enabled: true 
+
+paginate: 10
+
+baseurl: ""
+
+# ------------ The following options are not recommended to be modified ------------------
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: 
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: "" 
+      type: posts
+    values:
+      layout: post
+      comments: true 
+      toc: true 
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs 
+    values:
+      layout: page
+      permalink: /:title/
+  - scope:
+      path: assets/img/favicons
+    values:
+      swcache: true
+  - scope:
+      path: assets/js/dist
+    values:
+      swcache: true
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - rollup.config.js
+  - package*.json
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
